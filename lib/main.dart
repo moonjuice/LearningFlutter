@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 main() {
-  runApp(
-    Center(
-      child: Text(
-        '第一個APP',
-        textDirection: TextDirection.ltr,
-      ),
-    ),
-  );
+  runApp(MaterialApp(
+    home: Scaffold(
+        appBar: AppBar(
+          title: Text('Title'),
+        ),
+        body: Center(
+          child: Text('Body'),
+        )),
+  ));
 }
