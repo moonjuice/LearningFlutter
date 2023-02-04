@@ -27,10 +27,24 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-        child: Container(
-      color: Colors.amber,
-      child: Text('發大財'),
-      padding: EdgeInsets.only(left: 50, top: 100, right: 100, bottom: 10),
-    ));
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Container(
+            color: Colors.amber,
+            child: Text('1', style: TextStyle(fontSize: 100)),
+          ),
+          Container(
+            color: Colors.red,
+            child: Text('2', style: TextStyle(fontSize: 200)),
+          ),
+          Container(
+            color: Colors.green,
+            child: Text('3', style: TextStyle(fontSize: 300)),
+          )
+        ],
+      ),
+    );
   }
 }
